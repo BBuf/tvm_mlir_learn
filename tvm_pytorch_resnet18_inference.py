@@ -19,6 +19,7 @@ from PIL import Image
 
 img_url = "https://github.com/dmlc/mxnet.js/blob/main/data/cat.png?raw=true"
 img_path = download_testdata(img_url, "cat.png", module="data")
+print(img_path)
 img = Image.open(img_path).resize((224, 224))
 
 # Preprocess the image and convert to tensor
@@ -49,7 +50,7 @@ mod, params = relay.frontend.from_pytorch(scripted_model, shape_list)
 # Compile the graph to llvm target with given input specification.
 target = "llvm"
 target_host = "llvm"
-ctx = tvm.cpu(0)
+dev = tvm.cpu(0)
 with tvm.transform.PassContext(opt_level=3):
     lib = relay.build(mod, target=target, target_host=target_host, params=params)
 
@@ -57,12 +58,12 @@ with tvm.transform.PassContext(opt_level=3):
 # Execute the portable graph on TVM
 # ---------------------------------
 # Now we can try deploying the compiled model on target.
-from tvm.contrib import graph_runtime
+from tvm.contrib import graph_executor
 
 tvm_t0 = time.clock()
 for i in range(10):
     dtype = "float32"
-    m = graph_runtime.GraphModule(lib["default"](ctx))
+    m = graph_executor.GraphModule(lib["default"](dev))
     # Set inputs
     m.set_input(input_name, tvm.nd.array(img.astype(dtype)))
     # Execute
