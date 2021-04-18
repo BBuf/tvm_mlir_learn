@@ -31,3 +31,7 @@ with torch.no_grad():
     top1_torch = np.argmax(output.numpy())
 
 print(top1_torch)
+
+# export onnx
+
+torch_out = torch.onnx.export(model, torch_img, 'resnet18.onnx', verbose=True, export_params=True)
