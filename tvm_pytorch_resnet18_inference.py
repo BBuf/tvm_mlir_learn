@@ -60,10 +60,11 @@ with tvm.transform.PassContext(opt_level=3):
 # Now we can try deploying the compiled model on target.
 from tvm.contrib import graph_executor
 
+m = graph_executor.GraphModule(lib["default"](dev))
+
 tvm_t0 = time.clock()
 for i in range(10):
     dtype = "float32"
-    m = graph_executor.GraphModule(lib["default"](dev))
     # Set inputs
     m.set_input(input_name, tvm.nd.array(img.astype(dtype)))
     # Execute
