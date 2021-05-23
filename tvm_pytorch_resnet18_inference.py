@@ -5,7 +5,7 @@ import numpy as np
 from tvm.contrib.download import download_testdata
 import torch
 import torchvision
-
+# device = torch.device("cpu")
 model_name = "resnet18"
 model = getattr(torchvision.models, model_name)(pretrained=True)
 model = model.eval()
@@ -24,6 +24,7 @@ img = Image.open(img_path).resize((224, 224))
 
 # Preprocess the image and convert to tensor
 from torchvision import transforms
+
 
 my_preprocess = transforms.Compose(
     [
@@ -51,7 +52,7 @@ mod, params = relay.frontend.from_pytorch(scripted_model, shape_list)
 target = "llvm"
 target_host = "llvm"
 dev = tvm.cpu(0)
-with tvm.transform.PassContext(opt_level=3):
+with tvm.transform.PassContext(opt_level=7):
     lib = relay.build(mod, target=target, target_host=target_host, params=params)
 
 ######################################################################
@@ -62,7 +63,7 @@ from tvm.contrib import graph_executor
 
 m = graph_executor.GraphModule(lib["default"](dev))
 
-tvm_t0 = time.clock()
+tvm_t0 = time.process_time()
 for i in range(10):
     dtype = "float32"
     # Set inputs
@@ -71,7 +72,7 @@ for i in range(10):
     m.run()
     # Get outputs
     tvm_output = m.get_output(0)
-tvm_t1 = time.clock()
+tvm_t1 = time.process_time()
 
 #####################################################################
 # Look up synset name
@@ -112,7 +113,7 @@ top1_tvm = np.argmax(tvm_output.asnumpy()[0])
 tvm_class_key = class_id_to_key[top1_tvm]
 
 # Convert input to PyTorch variable and get PyTorch result for comparison
-torch_t0 = time.clock()
+torch_t0 = time.process_time()
 for i in range(10):
     with torch.no_grad():
         torch_img = torch.from_numpy(img)
@@ -121,7 +122,7 @@ for i in range(10):
         # Get top-1 result for PyTorch
         top1_torch = np.argmax(output.numpy())
         torch_class_key = class_id_to_key[top1_torch]
-torch_t1 = time.clock()
+torch_t1 = time.process_time()
 
 tvm_time = tvm_t1 - tvm_t0
 torch_time = torch_t1 - torch_t0
