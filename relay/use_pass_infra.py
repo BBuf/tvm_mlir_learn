@@ -22,22 +22,14 @@ How to Use TVM Pass Infra
 =========================
 **Author**: `Zhi Chen <https://github.com/zhiics>`_
 
-As the number of optimization passes increases in Relay/tir, it becomes intractable to
-execute them and maintain their dependencies manually. Therefore, we have
-introduced an infrastructure to manage the optimization passes and make it
-applicable to different layers of the IR in the TVM stack.
+随着 Relay/tir 中优化pass次数的增加，手动执行它们并维护它们的依赖关系变得棘手。 因此，我们引入了一个Pass基础设施来管理优化passes，并使其适用于 TVM 栈中不同层的 IR。 
 
-The optimizations of a Relay/tir program could be applied at various granularity,
-namely function-level and module-level using :py:class:`tvm.relay.transform.FunctionPass`/
-:py:class:`tvm.tir.transform.PrimFuncPass` and :py:class:`tvm.transform.ModulePass`
-respectively. Or users can rely on :py:class:`tvm.transform.Sequential` to apply a sequence of passes
-on a Relay/tir program where the dependencies between passes can be resolved by the
-pass infra. For more details about each type of these passes, please refer to
-the :ref:`pass-infra`
+Relay/tir 程序的优化可以应用于各种粒度，即分别使用 `tvm.relay.transform.FunctionPass`/`tvm.tir.transform.PrimFuncPass` 和 `tvm.transform.ModulePass` 的function-level
 
-This tutorial mainly demostrates how developers can use the pass infra to perform
-a certain optimization and create an optimization pipeline for a Relay program.
-The same approach can be used for tir as well.
+和module-level级别的优化。 或者用户可以依靠 `tvm.transform.Sequential` 在 Relay/tir 程序上应用一系列passes，其中passes之间的依赖关系可以通过Pass Infra解决。 
+
+这里主要是来演示一些开发人员如何使用Pass Infra来进行某种优化，并为Relay程序创建优化管道。这里的方法同样适用于tir。首先导入一些必要的包。
+
 """
 
 import numpy as np
@@ -99,6 +91,8 @@ def alter_conv2d(attrs, inputs, tinfos, out_type):
 # functions for optimization.
 f = example()
 mod = tvm.IRModule.from_expr(f)
+
+print(mod)
 
 # Now we can apply constant folding on the module.
 # fold_const here is a callback that doesn't take any parameters.
