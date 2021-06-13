@@ -59,8 +59,6 @@ data = relay.var("data", shape=data_shape, dtype=dtype)
 act = simplenet(data, "graph", 32, strides=(2, 2))
 func = relay.Function(relay.analysis.free_vars(act), act)
 
-print(func)
-
 np_data = np.random.uniform(-1, 1, (1, 3, 224, 224))
 
 params = {
@@ -71,8 +69,11 @@ params = {
     "graph_bn_moving_var": tvm.nd.array(np.random.uniform(-1, 1, (32)).astype(dtype)),
 }
 
-with tvm.transform.PassContext(opt_level=3):
+print(func)
+
+with tvm.transform.PassContext(opt_level=10):
     lib = relay.build(func, "llvm", params=params)
+
 
 dev = tvm.cpu(0)
 dtype = "float32"
