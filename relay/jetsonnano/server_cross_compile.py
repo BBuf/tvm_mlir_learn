@@ -74,10 +74,36 @@ def get_tf_yolov3_tiny(
     return mod, params
 
 
-def get_darknet(
-        cfg_path='/home/bbuf/darknet/cfg/yolov3-tiny.cfg',
-        weights_path='/home/bbuf/data/darknet/yolov3-tiny.weights',
-        lib_path='/home/ubuntu/.tvm_test_data/darknet/libdarknet2.0.so',):
+def get_darknet():
+    ######################################################################
+    # Choose the model
+    # -----------------------
+    # Models are: 'yolov2', 'yolov3' or 'yolov3-tiny'
+
+    # Model name
+    MODEL_NAME = "yolov3-tiny"
+    CFG_NAME = MODEL_NAME + '.cfg'
+    WEIGHTS_NAME = MODEL_NAME + '.weights'
+    REPO_URL = 'https://github.com/dmlc/web-data/blob/master/darknet/'
+    CFG_URL = 'https://github.com/pjreddie/darknet/raw/master/cfg/' + CFG_NAME + '?raw=true'
+    WEIGHTS_URL = 'https://pjreddie.com/media/files/' + WEIGHTS_NAME
+
+    cfg_path = download_testdata(CFG_URL, CFG_NAME, module="darknet")
+    weights_path = download_testdata(WEIGHTS_URL, WEIGHTS_NAME, module="darknet")
+
+    # Download and Load darknet library
+    if sys.platform in ['linux', 'linux2']:
+        DARKNET_LIB = 'libdarknet2.0.so'
+        DARKNET_URL = REPO_URL + 'lib/' + DARKNET_LIB + '?raw=true'
+    elif sys.platform == 'darwin':
+        DARKNET_LIB = 'libdarknet_mac2.0.so'
+        DARKNET_URL = REPO_URL + 'lib_osx/' + DARKNET_LIB + '?raw=true'
+    else:
+        err = "Darknet lib is not supported on {} platform".format(sys.platform)
+        raise NotImplementedError(err)
+
+    lib_path = download_testdata(DARKNET_URL, DARKNET_LIB, module="darknet")
+    
     from tvm.relay.testing.darknet import __darknetffi__
     DARKNET_LIB = __darknetffi__.dlopen(lib_path)
     net = DARKNET_LIB.load_network(
