@@ -35,6 +35,7 @@ Please install CFFI and CV2 before executing this script
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+import time
 
 # tvm, relay
 import tvm
@@ -78,8 +79,10 @@ else:
     err = "Darknet lib is not supported on {} platform".format(sys.platform)
     raise NotImplementedError(err)
 
-lib_path = download_testdata(DARKNET_URL, DARKNET_LIB, module="darknet")
+# lib_path = download_testdata(DARKNET_URL, DARKNET_LIB, module="darknet")
+lib_path = "./libdarknet2.0.so"
 
+# TVM的前端，将各种深度学习模型转换为哦Realy IR
 DARKNET_LIB = __darknetffi__.dlopen(lib_path)
 net = DARKNET_LIB.load_network(cfg_path.encode("utf-8"), weights_path.encode("utf-8"), 0)
 dtype = "float32"
@@ -91,9 +94,8 @@ print("Converting darknet to relay functions...")
 mod, params = relay.frontend.from_darknet(net, dtype=dtype, shape=data.shape)
 
 ######################################################################
-# Import the graph to Relay
-# -------------------------
-# compile the model
+# 图结构编译，并获取TVM Library
+
 target = tvm.target.Target("llvm", host="llvm")
 dev = tvm.cpu(0)
 data = np.empty([batch_size, net.c, net.h, net.w], dtype)
@@ -104,8 +106,14 @@ with tvm.transform.PassContext(opt_level=3):
 
 [neth, netw] = shape["data"][2:]  # Current image shape is 608x608
 ######################################################################
-# Load a test image
+# 预测准备工作，获取最终需要预测的图片，并对图片进行预处理
+# 图片预处理包括：
+# 1. 将 [height, width, 3] 转换为 [3, height, width]
+# 2. 转换为RGB图像
+# 3. 像素/255.，取值范围[0,1]
+# 4. 按比例resize图像，然后使用0.5pad成 [net.h, net.w] 尺寸的
 # -----------------
+
 test_image = "dog.jpg"
 print("Loading the test image...")
 img_url = REPO_URL + "data/" + test_image + "?raw=true"
@@ -113,7 +121,7 @@ img_path = download_testdata(img_url, test_image, "data")
 
 data = tvm.relay.testing.darknet.load_image(img_path, netw, neth)
 ######################################################################
-# Execute on TVM Runtime
+# 在TVM运行时上执行程序
 # ----------------------
 # The process is no different from other examples.
 from tvm.contrib import graph_executor
@@ -130,7 +138,13 @@ print("Running the test image...")
 thresh = 0.5
 nms_thresh = 0.45
 
+time_start = time.time()
+
 m.run()
+
+time_end = time.time()
+
+print('time cost', time_end-time_start,'s')
 
 # get outputs
 tvm_out = []
