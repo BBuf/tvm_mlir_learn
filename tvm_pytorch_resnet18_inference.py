@@ -5,6 +5,7 @@ import numpy as np
 from tvm.contrib.download import download_testdata
 import torch
 import torchvision
+from scipy.special import softmax
 # device = torch.device("cpu")
 model_name = "resnet18"
 model = getattr(torchvision.models, model_name)(pretrained=True)
@@ -136,8 +137,9 @@ for i in range(n_warmup+n_time):
 # torch_time = torch_t1 - torch_t0
 tvm_time = np.mean(tvm_time_spent[n_warmup:]) * 1000
 torch_time = np.mean(torch_time_spent[n_warmup:]) * 1000
-
-print("Relay top-1 id: {}, class name: {}, class logit: {}".format(top1_tvm, key_to_classname[tvm_class_key], tvm_output.asnumpy()[0][top1_tvm]))
-print("Torch top-1 id: {}, class name: {}, class logit: {}".format(top1_torch, key_to_classname[torch_class_key], output.numpy()[0][top1_torch]))
+tvm_output_prob = softmax(tvm_output.asnumpy())
+output_prob = softmax(output.numpy())
+print("Relay top-1 id: {}, class name: {}, class probality: {}".format(top1_tvm, key_to_classname[tvm_class_key], tvm_output_prob[0][top1_tvm]))
+print("Torch top-1 id: {}, class name: {}, class probality: {}".format(top1_torch, key_to_classname[torch_class_key], output_prob[0][top1_torch]))
 print('Relay time(ms): {:.3f}'.format(tvm_time))
 print('Torch time(ms): {:.3f}'.format(torch_time))
