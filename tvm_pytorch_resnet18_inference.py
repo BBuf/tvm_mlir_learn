@@ -63,16 +63,22 @@ from tvm.contrib import graph_executor
 
 m = graph_executor.GraphModule(lib["default"](dev))
 
-tvm_t0 = time.process_time()
-for i in range(10):
+tvm_time_spent=[]
+torch_time_spent=[]
+n_warmup=5
+n_time=10
+# tvm_t0 = time.process_time()
+for i in range(n_warmup+n_time):
     dtype = "float32"
     # Set inputs
     m.set_input(input_name, tvm.nd.array(img.astype(dtype)))
+    tvm_t0 = time.time()
     # Execute
     m.run()
     # Get outputs
     tvm_output = m.get_output(0)
-tvm_t1 = time.process_time()
+    tvm_time_spent.append(time.time() - tvm_t0)
+# tvm_t1 = time.process_time()
 
 #####################################################################
 # Look up synset name
@@ -113,21 +119,24 @@ top1_tvm = np.argmax(tvm_output.asnumpy()[0])
 tvm_class_key = class_id_to_key[top1_tvm]
 
 # Convert input to PyTorch variable and get PyTorch result for comparison
-torch_t0 = time.process_time()
-for i in range(10):
+# torch_t0 = time.process_time()
+for i in range(n_warmup+n_time):
     with torch.no_grad():
         torch_img = torch.from_numpy(img)
+        torch_t0 = time.time()
         output = model(torch_img)
-
+        torch_time_spent.append(time.time() - torch_t0)
         # Get top-1 result for PyTorch
         top1_torch = np.argmax(output.numpy())
         torch_class_key = class_id_to_key[top1_torch]
-torch_t1 = time.process_time()
+# torch_t1 = time.process_time()
 
-tvm_time = tvm_t1 - tvm_t0
-torch_time = torch_t1 - torch_t0
+# tvm_time = tvm_t1 - tvm_t0
+# torch_time = torch_t1 - torch_t0
+tvm_time = np.mean(tvm_time_spent[n_warmup:]) * 1000
+torch_time = np.mean(torch_time_spent[n_warmup:]) * 1000
 
-print("Relay top-1 id: {}, class name: {}".format(top1_tvm, key_to_classname[tvm_class_key]))
-print("Torch top-1 id: {}, class name: {}".format(top1_torch, key_to_classname[torch_class_key]))
-print('Relay time: ', tvm_time / 10.0, 'seconds')
-print('Torch time: ', torch_time / 10.0, 'seconds')
+print("Relay top-1 id: {}, class name: {}, class logit: {}".format(top1_tvm, key_to_classname[tvm_class_key], tvm_output.asnumpy()[0][top1_tvm]))
+print("Torch top-1 id: {}, class name: {}, class logit: {}".format(top1_torch, key_to_classname[torch_class_key], output.numpy()[0][top1_torch]))
+print('Relay time(ms): {:.3f}'.format(tvm_time))
+print('Torch time(ms): {:.3f}'.format(torch_time))
