@@ -120,6 +120,7 @@ tvm_class_key = class_id_to_key[top1_tvm]
 
 # Convert input to PyTorch variable and get PyTorch result for comparison
 # torch_t0 = time.process_time()
+# torch.set_num_threads(1)
 for i in range(n_warmup+n_time):
     with torch.no_grad():
         torch_img = torch.from_numpy(img)
