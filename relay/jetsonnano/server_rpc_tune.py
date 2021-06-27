@@ -8,7 +8,7 @@ from tvm import autotvm
 from tvm import relay
 import tvm.relay.testing
 from tvm.autotvm.tuner import XGBTuner, GATuner, RandomTuner, GridSearchTuner
-from tvm.contrib.util import tempdir
+from tvm.contrib.utils import tempdir
 import tvm.relay.testing.tf as tf_testing
 import tvm.contrib.graph_runtime as runtime
 from tvm.relay.testing.darknet import __darknetffi__
