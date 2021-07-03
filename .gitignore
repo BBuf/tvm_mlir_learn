@@ -1,2 +1,8 @@
 *.pyc
 *.onnx
+.vscode
+.ipynb_checkpoints/
+*.log
+*.log.tmp
+*.pth
+*.pb

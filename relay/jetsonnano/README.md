@@ -15,5 +15,9 @@
 + `server_rpc_tune.py`: use Server CPU and RPC to auto-tune Jetbot.
 + `server_cross_compile.py`: cross compile and export libs/graphs/params on Server.
 + `jetson_detect_video.py`: run detection on Jetbot.
++ `deploy_model_on_jetsonnano.py`: run resnet18 on Jetbot. (Local Run, Not RPC)
 
-## 3. Run Details
+## 3. requirements
+```
+mxnet
+```
