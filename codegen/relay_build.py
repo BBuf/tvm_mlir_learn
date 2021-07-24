@@ -8,7 +8,8 @@ import tvm
 # Resnet18 workload
 resnet18_mod, resnet18_params = relay.testing.resnet.get_workload(num_layers=18)
 
-with tvm.transform.PassContext(opt_level=6):
+
+with relay.build_config(opt_level=0):
     graph, lib, params = relay.build_module.build(resnet18_mod, "llvm", params=resnet18_params)
 
 # print relay ir
