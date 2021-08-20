@@ -3,7 +3,7 @@
 #include <string.h>
 #include <iostream>
 #include "MMult0.h"
-// #include "MMult1.h"
+#include "MMult1.h"
 // #include "MMult2.h"
 // #include "MMult_1x4_3.h"
 // #include "MMult_1x4_4.h"
@@ -90,7 +90,7 @@ int main(){
 
     m = 24;
     n = 24;
-    k = 64;
+    k = 24;
     gflops = 2.0 * m * n * k * 1.0e-09;
     lda = m;
     ldb = k;
@@ -137,8 +137,8 @@ int main(){
         exit(0);
     }
 
-    printf("%d %le %le \n", i, gflops / time_best, diff);
-    // fflush(stdout);
+    printf("%le %le \n", gflops / time_best, diff);
+    fflush(stdout);
 
     free(a);
     free(b);
@@ -146,6 +146,6 @@ int main(){
     free(prec);
     free(nowc);
     printf("\n");
-    // fflush(stdout);
+    fflush(stdout);
     return 0;
 }
