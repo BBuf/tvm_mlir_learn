@@ -6,3 +6,6 @@
 *.log.tmp
 *.pth
 *.pb
+*.onnx
+*.o
+cpufp
