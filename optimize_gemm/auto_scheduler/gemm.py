@@ -1,40 +1,74 @@
-import tvm
-from tvm import relay
 import numpy as np
-from tvm.contrib import graph_executor
+import tvm
+from tvm import te, auto_scheduler, topi
+from tvm.topi.testing import dense
 
 # build model
 m = 24
 n = 24
 k = 64
 
-x = relay.var("x", relay.TensorType((m, k), dtype='float32'))
-y = relay.var("y", relay.TensorType((n, k), dtype='float32'))
-z = relay.nn.dense(x, y)
+@auto_scheduler.register_workload
+def gemm():
+    input = te.placeholder((m, k), name="input")
+    weight = te.placeholder((n, k), name="weight")
+    output = topi.nn.dense(input, weight)
+    return [input, weight, output]
 
-net = relay.Function([x, y], z)
-
-# build and lowering
-module = tvm.IRModule.from_expr(net)
-lib = relay.build(module, "llvm")
+target = tvm.target.Target("llvm")
 
 
-dev = tvm.cpu(0)
-input1 = tvm.nd.array(np.random.uniform(size=[m, k]).astype('float32'), dev)
-input2 = tvm.nd.array(np.random.uniform(size=[n, k]).astype('float32'), dev)
-m = graph_executor.GraphModule(lib["default"](dev))
-# set inputs
-m.set_input("x", input1)
-m.set_input("y", input2)
-# execute
-m.run()
-# get outputs
-tvm_output = m.get_output(0)
+task = auto_scheduler.SearchTask(
+    func=gemm, target=target
+)
 
-print(net.body)
-# free_var %x: Tensor[(2), float32];
-# nn.softmax(%x)
-print(module)
-# def @main(%x: Tensor[(2), float32]) {
-#   nn.softmax(%x)
-# }
+# Inspect the computational graph
+print("Computational DAG:")
+print(task.compute_dag)
+
+log_file = "gemm.json"
+measure_ctx = auto_scheduler.LocalRPCMeasureContext(min_repeat_ms=300)
+tune_option = auto_scheduler.TuningOptions(
+    num_measure_trials=1000,  # change this to 1000 to achieve the best performance
+    runner=measure_ctx.runner,
+    measure_callbacks=[auto_scheduler.RecordToFile(log_file)],
+    verbose=2,
+)
+
+# Run auto-tuning (search)
+task.tune(tune_option)
+# Apply the best schedule
+sch, args = task.apply_best(log_file)
+
+# Kill the measurement process
+del measure_ctx
+
+print("Lowered TIR:")
+print(tvm.lower(sch, args, simple_mode=True))
+
+
+func = tvm.build(sch, args, target)
+
+# Check correctness
+input_np = np.random.uniform(size=(m, k)).astype(np.float32)
+weight_np = np.random.uniform(size=(n, k)).astype(np.float32)
+out_np = np.matmul(input_np, weight_np)
+
+dev = tvm.cpu()
+input_tvm = tvm.nd.array(input_np, device=dev)
+weight_tvm = tvm.nd.array(weight_np, device=dev)
+out_tvm = tvm.nd.empty(out_np.shape, device=dev)
+
+func(input_tvm, weight_tvm, out_tvm)
+
+# Check results
+np.testing.assert_allclose(out_np, out_tvm.numpy(), rtol=1e-3)
+
+# Evaluate execution time
+evaluator = func.time_evaluator(func.entry_name, dev, min_repeat_ms=500)
+print(
+    "Execution time of this operator: %.3f ms"
+    % (np.median(evaluator(input_tvm, weight_tvm, out_tvm).results) * 1000)
+)
+
+
