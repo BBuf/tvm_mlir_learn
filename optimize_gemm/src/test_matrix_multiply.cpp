@@ -3,7 +3,7 @@
 #include <string.h>
 #include <iostream>
 #include "MMult0.h"
-#include "MMult1.h"
+// #include "MMult1.h"
 // #include "MMult2.h"
 // #include "MMult_1x4_3.h"
 // #include "MMult_1x4_4.h"
@@ -17,7 +17,7 @@
 // #include "MMult_4x4_5.h"
 // #include "MMult_4x4_6.h"
 // #include "MMult_4x4_7.h"
-// #include "MMult_4x4_8.h"
+#include "MMult_4x4_8.h"
 // #include "MMult_4x4_10.h"
 // #include "MMult_4x4_11.h"
 // #include "MMult_4x4_12.h"
@@ -88,63 +88,65 @@ int main(){
 
     double time_used = 0.0;
 
-    m = 24;
-    n = 24;
-    k = 24;
-    gflops = 2.0 * m * n * k * 1.0e-09;
-    lda = m;
-    ldb = k;
-    ldc = m;
-    a = (float *)malloc(lda * k * sizeof(float));
-    b = (float *)malloc(ldb * n * sizeof(float));
-    c = (float *)malloc(ldc * n * sizeof(float));
-    prec = (float *)malloc(ldc * n * sizeof(float));
-    nowc = (float *)malloc(ldc * n * sizeof(float));
-    // 随机填充矩阵
-    random_matrix(m, k, a, lda);
-    random_matrix(k, n, b, ldb);
-    random_matrix(m, n, prec, ldc);
+    for(int i = 40; i <= 500; i += 40){
+        m = i;
+        n = i;
+        k = i;
+        gflops = 2.0 * m * n * k * 1.0e-09;
+        lda = m;
+        ldb = k;
+        ldc = m;
+        a = (float *)malloc(lda * k * sizeof(float));
+        b = (float *)malloc(ldb * n * sizeof(float));
+        c = (float *)malloc(ldc * n * sizeof(float));
+        prec = (float *)malloc(ldc * n * sizeof(float));
+        nowc = (float *)malloc(ldc * n * sizeof(float));
+        // 随机填充矩阵
+        random_matrix(m, k, a, lda);
+        random_matrix(k, n, b, ldb);
+        random_matrix(m, n, prec, ldc);
 
-    memset(prec, 0, ldc * n * sizeof(float));
+        memset(prec, 0, ldc * n * sizeof(float));
 
-    copy_matrix(m, n, prec, ldc, nowc, ldc);
+        copy_matrix(m, n, prec, ldc, nowc, ldc);
 
-    // 以nowc为基准，判断矩阵运行算结果是否正确
-    MatrixMultiply(m, n, k, a, lda, b, ldb, nowc, ldc);
+        // 以nowc为基准，判断矩阵运行算结果是否正确
+        MatrixMultiply(m, n, k, a, lda, b, ldb, nowc, ldc);
 
-    // 循环20次，以最快的运行时间为结果
-    for(int j=0; j < 20; j++){
-        
-        copy_matrix(m, n, prec, ldc, c, ldc);
+        // 循环20次，以最快的运行时间为结果
+        for(int j=0; j < 20; j++){
+            
+            copy_matrix(m, n, prec, ldc, c, ldc);
 
-        clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+            clock_gettime(CLOCK_MONOTONIC_RAW, &start);
 
-        MatrixMultiply(m, n, k, a, lda, b, ldb, c, ldc);
+            MY_MMult_4x4_8(m, n, k, a, lda, b, ldb, c, ldc);
 
-        clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+            clock_gettime(CLOCK_MONOTONIC_RAW, &end);
 
-        time_tmp = get_time(&start, &end);
-        
-        if(j == 0)
-            time_best = time_tmp;
-        else
-            time_best = min(time_best, time_tmp);
+            time_tmp = get_time(&start, &end);
+            
+            if(j == 0)
+                time_best = time_tmp;
+            else
+                time_best = min(time_best, time_tmp);
+        }
+
+        diff = compare_matrices(m, n, c, ldc, nowc, ldc);
+
+        if(diff > 0.5f || diff < -0.5f){
+            exit(0);
+        }
+
+        printf("%d %le %le \n", i, gflops / time_best, diff);
+        fflush(stdout);
+
+        free(a);
+        free(b);
+        free(c);
+        free(prec);
+        free(nowc);
     }
-
-    diff = compare_matrices(m, n, c, ldc, nowc, ldc);
-
-    if(diff > 0.5f || diff < -0.5f){
-        exit(0);
-    }
-
-    printf("%le %le \n", gflops / time_best, diff);
-    fflush(stdout);
-
-    free(a);
-    free(b);
-    free(c);
-    free(prec);
-    free(nowc);
     printf("\n");
     fflush(stdout);
     return 0;
