@@ -8,5 +8,4 @@
 *.pb
 *.onnx
 *.o
-cpufp
 unit_test
