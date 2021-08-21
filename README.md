@@ -11,6 +11,7 @@
 - `tvm_pytorch_resnet18_inference.py` 使用 TVM 在 X86 CPU 上运行 Pytorch 的 ResNet18 模型。
 - `tvm_onnx_resnet18_inference.py` TVM 加载 ResNet18 的 ONNX 模型进行推理。
 - `pytorch_resnet18_export_onnx.py` Pytorch 导出 ResNet18 的 ONNX 模型示例。
+- `optimize_gemm` 让深度学习编译器来指导我们写代码，以GEMM为例。
 
 ## learning note
 
