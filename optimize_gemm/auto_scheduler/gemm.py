@@ -4,9 +4,9 @@ from tvm import te, auto_scheduler, topi
 from tvm.topi.testing import dense
 
 # build model
-m = 96
-n = 96
-k = 256
+m = 2048
+n = 24
+k = 2048
 
 @auto_scheduler.register_workload
 def gemm():
@@ -15,7 +15,7 @@ def gemm():
     output = topi.nn.dense(input, weight)
     return [input, weight, output]
 
-target = tvm.target.Target("llvm")
+target = tvm.target.Target("llvm -mcpu=skylake-avx512")
 
 
 task = auto_scheduler.SearchTask(
