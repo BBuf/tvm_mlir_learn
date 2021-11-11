@@ -19,6 +19,8 @@
 
 -------------------------------------------------------------------------------------------
 
+- [【从零开始学深度学习编译器】十四，MLIR Toy Tutorials学习笔记之部分Lowering](https://mp.weixin.qq.com/s/3hAf7zxEKwRvnVAKhziTmA)
+- [【从零开始学深度学习编译器】十三，如何在MLIR里面写Pass？](https://mp.weixin.qq.com/s/3N9DK7aQtjoLgs-s0lP-jg)
 - [【从零开始学深度学习编译器】十二，MLIR Toy Tutorials学习笔记一](https://mp.weixin.qq.com/s/jMHesvKmAUU5dYH0WznulA)
 - [【从零开始学深度学习编译器】十一，初识MLIR](https://mp.weixin.qq.com/s/4pD00N9HnPiIYUOGSnSuIw)
 - [可以让深度学习编译器来指导算子优化吗](https://mp.weixin.qq.com/s/goAtJKe6p0e3pbp5vcQWfA)
