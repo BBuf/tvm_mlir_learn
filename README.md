@@ -19,6 +19,7 @@
 
 -------------------------------------------------------------------------------------------
 
+- [【用沐神的方法阅读PyTorch FX论文】](https://mp.weixin.qq.com/s/JENCa_GNGPHhOspGb79ugA)
 - [【以OneFlow为例探索MLIR的实际开发流程】](https://mp.weixin.qq.com/s/eUIm4QZbKU69B9_h3f109A)
 - [【从零开始学深度学习编译器】十七，MLIR ODS要点总结下篇](https://mp.weixin.qq.com/s/TsaMULNUXIVlUPnVs2WexA)
 - [【从零开始学深度学习编译器】十六，MLIR ODS要点总结上篇](https://mp.weixin.qq.com/s/SFHWUm63BqsD9SWwuW83mA)
