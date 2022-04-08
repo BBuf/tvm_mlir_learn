@@ -1,4 +1,4 @@
-# tvm_learn
+# tvm_mlir_learn
 
 ## preoject introduction
 
