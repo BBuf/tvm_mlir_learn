@@ -13,6 +13,11 @@
 - `pytorch_resnet18_export_onnx.py` Pytorch 导出 ResNet18 的 ONNX 模型示例。
 - `optimize_gemm` 让深度学习编译器来指导我们写代码，以GEMM为例。
 
+## video collection
+
+- [TVM Conf 2020 - An Introduction to TVM Part1](https://mp.weixin.qq.com/s/NaMxlNzPrRlBYJfJ7ivjuw)
+- [Torch MLIR公开会议翻译视频-上](https://mp.weixin.qq.com/s/DFmu5NYHmOUaj3iheSe5jQ)
+
 ## learning note
 
 - [白杨：TVM源语-Compute篇](https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg)
