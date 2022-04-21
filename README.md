@@ -16,7 +16,7 @@
 ## video collection
 
 - [TVM Conf 2020 - An Introduction to TVM Part1](https://mp.weixin.qq.com/s/NaMxlNzPrRlBYJfJ7ivjuw)
-- [TVM Conf 2020 - An Introduction to TVM Part2](https://mp.weixin.qq.com/s/KAG0DjnhQcGEJa-hRFiBfgTVM Conf 2020 - An Introduction to TVM Part2)
+- [TVM Conf 2020 - An Introduction to TVM Part2](https://mp.weixin.qq.com/s/KAG0DjnhQcGEJa-hRFiBfg)
 - [Torch MLIR公开会议翻译视频-上](https://mp.weixin.qq.com/s/DFmu5NYHmOUaj3iheSe5jQ)
 
 ## learning note
