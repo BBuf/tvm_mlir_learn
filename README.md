@@ -18,6 +18,7 @@
 - [TVM Conf 2020 - An Introduction to TVM Part1](https://mp.weixin.qq.com/s/NaMxlNzPrRlBYJfJ7ivjuw)
 - [TVM Conf 2020 - An Introduction to TVM Part2](https://mp.weixin.qq.com/s/KAG0DjnhQcGEJa-hRFiBfg)
 - [Torch MLIR公开会议翻译视频-上](https://mp.weixin.qq.com/s/DFmu5NYHmOUaj3iheSe5jQ)
+- [Torch MLIR公开会议翻译视频（自制中英双字完整版）](https://mp.weixin.qq.com/s/d0jJFYdUncvNstefvvm-6w)
 
 ## learning note
 
