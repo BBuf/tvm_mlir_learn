@@ -1,3 +1,5 @@
+# 43.81 GFLOPS
+
 import os
 import tvm
 import tvm.testing
