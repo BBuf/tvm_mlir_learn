@@ -12,6 +12,7 @@ os.environ['TVM_NUM_THREADS']=str(1)
 M = 1024
 K = 1024
 N = 1024
+GFLOPS = 2 * M * K * N * 1e-9
 
 target = "llvm -mcpu=core-avx2"
 dev = tvm.device(target, 0)
@@ -103,7 +104,10 @@ def benchmark(matmul_func, dtype):
     tvm.testing.assert_allclose(c.numpy(), answer, rtol=1e-5)
 
     evaluator = matmul_func.time_evaluator(matmul_func.entry_name, dev, number=EVAL_REPEAT_TIME)
-    print("TVM autoscheduler tuned: %f" % evaluator(a, b, c).mean)
+    tvm_time = evaluator(a, b, c).mean
+    print("TVM autoscheduler tuned: %f" % tvm_time)
+    tvm_glops = (GFLOPS / tvm_time)
+    print(f'TVM autoscheduler tuned GFLOPS: {tvm_glops}')
 
 def main(argv):       
     if (len(argv) > 1 and argv[1] == 'float32'):
