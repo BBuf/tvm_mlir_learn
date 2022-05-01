@@ -1,10 +1,11 @@
-
 import tvm
 import tvm.testing
 from tvm import te, auto_scheduler
 import numpy
 import timeit
 import os
+
+os.environ['TVM_NUM_THREADS']=str(1)
 
 # The size of the matrix
 # (M, K) x (K, N)
@@ -17,7 +18,6 @@ dev = tvm.device(target, 0)
 
 EVAL_REPEAT_TIME = 500
 
-# 参考reference [4] 定义矩阵乘法运算
 # 计算C(M, N) = A(M, K) x B(K, N)
 @auto_scheduler.register_workload
 def matmul(M, N, K, dtype):
@@ -122,4 +122,3 @@ def main(argv):
 import sys
 if __name__ == '__main__':
     main(sys.argv)
-
