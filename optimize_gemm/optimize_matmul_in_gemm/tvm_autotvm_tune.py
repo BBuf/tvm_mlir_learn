@@ -23,7 +23,6 @@ dev = tvm.device(target, 0)
 
 EVAL_REPEAT_TIME = 500
 
-# 参考reference [2][3] 定义矩阵乘法运算和调参设置
 # 计算C(M, N) = A(M, K) x B(K, N)
 @autotvm.template("tutorial/matmul")
 def matmul(M, N, K, dtype):
