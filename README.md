@@ -26,6 +26,7 @@
 
 -------------------------------------------------------------------------------------------
 
+- [【TVM 三代优化巡礼】在X86上将普通的矩阵乘法算子提速90倍](https://mp.weixin.qq.com/s/d8v9Q3EAkv8TknP5Hh7N7A)
 - [【论文解读】基于MLIR生成矩阵乘法的高性能GPU代码，性能持平cuBLAS](https://mp.weixin.qq.com/s/gbpqYwPbtHp1RIYPD_ZlCg)
 - [【从零开始学深度学习编译器】二十，MLIR的Pattern Rewrite机制](https://mp.weixin.qq.com/s/7QwJvTZ9Z2KbUwxqvQHC2g)
 - [【从零开始学深度学习编译器】十九，MLIR的Pass机制实践](https://mp.weixin.qq.com/s/qmFpGtH0oB_ml0LQGPUqPA)
