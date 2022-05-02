@@ -8,6 +8,7 @@
 - `relay` TVM 中一些 Relay 相关的示例，比如如何自定义 Pass，如何在 Jetson Nano 中运行DarkNet的YOLO模型等。 
 - `codegen` TVM 中 Codegen 相关示例，基于张量表达式和Relay IR。
 - `torchscript` Pytorch的TorchScript的用法。
+- compile_tvm_in_docker.md 。在Docker中编译TVM。
 - `tvm_pytorch_resnet18_inference.py` 使用 TVM 在 X86 CPU 上运行 Pytorch 的 ResNet18 模型。
 - `tvm_onnx_resnet18_inference.py` TVM 加载 ResNet18 的 ONNX 模型进行推理。
 - `pytorch_resnet18_export_onnx.py` Pytorch 导出 ResNet18 的 ONNX 模型示例。
