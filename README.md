@@ -24,6 +24,7 @@
 ## learning note
 
 - [白杨：TVM源语-Compute篇](https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg)
+- [MLSys 15-884: Course Introduction](https://mp.weixin.qq.com/s/79lzlCHAxQEE0EQcxL07XQ)
 
 -------------------------------------------------------------------------------------------
 
