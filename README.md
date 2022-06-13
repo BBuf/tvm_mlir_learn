@@ -23,6 +23,7 @@
 - [TVM命令行驱动程序 视频教程](https://mp.weixin.qq.com/s/XWKsQ7dPKv8IPhhPAoiVQQ)
 - [基于 MLIR 完成对 GEMM 的编译优化 中英视频上，中部分](https://mp.weixin.qq.com/s/9wyM3hKsJA0YxFsms1Rpuw)
 - [TVM TensorIR 视频讲解（熟肉）](https://mp.weixin.qq.com/s/MkUAuQlhZAF25wXlgtHD2Q)
+- [What Is LLVM?](https://www.bilibili.com/video/BV1yY411K7YA?spm_id_from=333.999.0.0&vd_source=347c9d161e405bfb1666662e320106d3)
 
 ## learning note
 
