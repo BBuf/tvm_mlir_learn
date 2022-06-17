@@ -25,7 +25,7 @@
 - [TVM TensorIR 视频讲解（熟肉）](https://mp.weixin.qq.com/s/MkUAuQlhZAF25wXlgtHD2Q)
 - [What Is LLVM?](https://www.bilibili.com/video/BV1yY411K7YA?spm_id_from=333.999.0.0&vd_source=347c9d161e405bfb1666662e320106d3)
 - [How To Install LLVM？](https://www.bilibili.com/video/BV1ka411s7rS/?vd_source=347c9d161e405bfb1666662e320106d3)
-- [Running the LLVM Tools](https://www.bilibili.com/video/BV1m3411M7zv/Running the LLVM Tools)
+- [Running the LLVM Tools](https://www.bilibili.com/video/BV1m3411M7zv/)
 
 ## learning note
 
