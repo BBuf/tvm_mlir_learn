@@ -35,6 +35,7 @@
 
 -------------------------------------------------------------------------------------------
 
+- [OSDI 2021 PET 论文解读（代码生成相关工作）](https://zhuanlan.zhihu.com/p/533807811)
 - [Buddy-MLIR 项目详解（入门 MLIR 极佳选择）](https://mp.weixin.qq.com/s/uE5VhU_s3NgndPk2X6zbAA)
 - [【社区实践】为 TVM 新增 OneFlow 前端](https://mp.weixin.qq.com/s/mwIc9DZo4r7YgYsPus-2tA)
 - [【TVM 三代优化巡礼】在X86上将普通的矩阵乘法算子提速90倍](https://mp.weixin.qq.com/s/d8v9Q3EAkv8TknP5Hh7N7A)
