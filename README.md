@@ -4,7 +4,7 @@
 
 - `scheduler` TVM 中 scheduler 详细举例，这里将 https://zhuanlan.zhihu.com/p/94846767 这篇文章的例子用TVM 0.8.0.dev 重写。
 - `dataflow_controlflow` 数据流和控制流的区别示例，这里是Pytorch为例子。
-- `ansor` Ansor这篇OSDI论文的翻译以及基于Ansor做一些实验。
+- `paper_reading` 编译器方面的一些论文阅读，如 PET / Ansor/ MLIR 等。
 - `relay` TVM 中一些 Relay 相关的示例，比如如何自定义 Pass，如何在 Jetson Nano 中运行DarkNet的YOLO模型等。 
 - `codegen` TVM 中 Codegen 相关示例，基于张量表达式和Relay IR。
 - `torchscript` Pytorch的TorchScript的用法。
