@@ -68,4 +68,7 @@
 ## 其它博客精选（TVM&MLIR 相关）
 
 - [深度学习编译器 TVM 代码串讲](https://zhuanlan.zhihu.com/p/446976730)
+- [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
+- [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
+
 
