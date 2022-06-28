@@ -32,9 +32,6 @@
 
 - [白杨：TVM源语-Compute篇](https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg)
 - [MLSys 15-884: Course Introduction](https://mp.weixin.qq.com/s/79lzlCHAxQEE0EQcxL07XQ)
-
--------------------------------------------------------------------------------------------
-
 - [OSDI 2021 PET 论文解读（代码生成相关工作）](https://zhuanlan.zhihu.com/p/533807811)
 - [Buddy-MLIR 项目详解（入门 MLIR 极佳选择）](https://mp.weixin.qq.com/s/uE5VhU_s3NgndPk2X6zbAA)
 - [【社区实践】为 TVM 新增 OneFlow 前端](https://mp.weixin.qq.com/s/mwIc9DZo4r7YgYsPus-2tA)
@@ -67,4 +64,8 @@
 - [【从零开始学TVM】三，基于ONNX模型结构了解TVM的前端](https://mp.weixin.qq.com/s/KFxd3zf76EP3DFcCAPZjvQ)
 - [【从零开始学深度学习编译器】二，TVM中的scheduler](https://mp.weixin.qq.com/s/fPpqKL3uaaJ5QlNS79DZ5Q)
 - [【从零开始学深度学习编译器】一，深度学习编译器及TVM 介绍](https://mp.weixin.qq.com/s/sZLWjYebbHjCgQ6XAZCiOw)
+
+## 其它博客精选（TVM&MLIR 相关）
+
+- [深度学习编译器 TVM 代码串讲](https://zhuanlan.zhihu.com/p/446976730)
 
