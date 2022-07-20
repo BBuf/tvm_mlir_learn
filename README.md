@@ -70,10 +70,17 @@
 ## 其它博客精选（TVM&MLIR 相关）
 
 - [深度学习编译器 TVM 代码串讲](https://zhuanlan.zhihu.com/p/446976730)
+- [TVM Overview](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
+- [TVM - 代码生成流程](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
 - [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
 - [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
 - [向外借力：Pluto助力MLIR编译器的多面体优化](https://mp.weixin.qq.com/s/n33DyOeTjA93HavZBZb94g)
 
 
+## 系统性的专栏
+
+- [深度学习编译器学习笔记和实践体会](https://zhuanlan.zhihu.com/c_1169609848697663488)
+- [蓝色的味道](https://zhuanlan.zhihu.com/frozengene)
+- [TVM官方专栏](https://zhuanlan.zhihu.com/tvmai)
 
 
