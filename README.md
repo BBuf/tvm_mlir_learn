@@ -28,6 +28,8 @@
 - [Running the LLVM Tools](https://www.bilibili.com/video/BV1m3411M7zv/)
 - [LLVM IR介绍](https://www.bilibili.com/video/BV1K34y1W7dn?spm_id_from=333.999.0.0)
 
+> LLVM 系列视频对应的源码在：https://github.com/lac-dcc/llvm-course
+
 ## learning note
 
 - [白杨：TVM源语-Compute篇](https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg)
