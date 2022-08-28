@@ -92,4 +92,8 @@
 - [蓝色的味道](https://zhuanlan.zhihu.com/frozengene)
 - [TVM官方专栏](https://zhuanlan.zhihu.com/tvmai)
 
+## 工具介绍
+
+- [FFI Navigator: 跨语言调用跳转IDE插件](https://zhuanlan.zhihu.com/p/103426525)
+
 
