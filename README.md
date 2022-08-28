@@ -74,6 +74,8 @@
 - [TVM - Relay IR计算图可视化](https://chhzh123.github.io/blogs/2020-03-25-relay-ir-viz/)
 - [TVM - 代码生成流程](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
 - [TVM/VTA代码生成流程](https://krantz-xrf.github.io/2019/10/24/tvm-workflow.html)
+- [tvm算子优化schedule（一）--CPU篇](https://zhuanlan.zhihu.com/p/403163009)
+- [tvm算子优化schedule（二）--GPU篇](https://zhuanlan.zhihu.com/p/403370698)
 - [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
 - [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
 - [向外借力：Pluto助力MLIR编译器的多面体优化](https://mp.weixin.qq.com/s/n33DyOeTjA93HavZBZb94g)
