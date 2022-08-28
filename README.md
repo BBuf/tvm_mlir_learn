@@ -87,6 +87,7 @@
 
 ## 系统性的专栏
 
+- [陈天奇 MLC课程](https://mlc.ai/zh/index.html)
 - [深度学习编译器学习笔记和实践体会](https://zhuanlan.zhihu.com/c_1169609848697663488)
 - [蓝色的味道](https://zhuanlan.zhihu.com/frozengene)
 - [TVM官方专栏](https://zhuanlan.zhihu.com/tvmai)
