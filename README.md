@@ -77,6 +77,7 @@
 - [tvm算子优化schedule（一）--CPU篇](https://zhuanlan.zhihu.com/p/403163009)
 - [tvm算子优化schedule（二）--GPU篇](https://zhuanlan.zhihu.com/p/403370698)
 - [TVM Runtime System 概述](https://zhuanlan.zhihu.com/p/504066888)
+- [TVM PackedFunc实现机制](https://hjchen2.github.io/2020/01/10/TVM-PackedFunc%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6/)
 - [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
 - [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
 - [向外借力：Pluto助力MLIR编译器的多面体优化](https://mp.weixin.qq.com/s/n33DyOeTjA93HavZBZb94g)
