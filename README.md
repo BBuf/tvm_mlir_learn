@@ -1,6 +1,6 @@
 # tvm_mlir_learn
 
-## preoject introduction
+## 项目结构介绍
 
 - `scheduler` TVM 中 scheduler 详细举例，这里将 https://zhuanlan.zhihu.com/p/94846767 这篇文章的例子用TVM 0.8.0.dev 重写。
 - `dataflow_controlflow` 数据流和控制流的区别示例，这里是Pytorch为例子。
@@ -14,8 +14,9 @@
 - `pytorch_resnet18_export_onnx.py` Pytorch 导出 ResNet18 的 ONNX 模型示例。
 - `optimize_gemm` 让深度学习编译器来指导我们写代码，以GEMM为例。
 
-## video collection
+## 视频收集
 
+### GiantPandaCV 翻译的视频
 - [What Is MLIR && What Is TVM？](https://mp.weixin.qq.com/s/Xj2iW9tFUGidlzLqEzoixQ)
 - [TVM Conf 2020 - An Introduction to TVM Part1](https://mp.weixin.qq.com/s/NaMxlNzPrRlBYJfJ7ivjuw)
 - [TVM Conf 2020 - An Introduction to TVM Part2](https://mp.weixin.qq.com/s/KAG0DjnhQcGEJa-hRFiBfg)
@@ -30,7 +31,16 @@
 
 > LLVM 系列视频对应的源码在：https://github.com/lac-dcc/llvm-course
 
-## learning note
+### 国内其它up主的编译器视频推荐（包含LLVM/MLIR/TVM）
+
+- [人工智能编译器MLIR-官方入门教程讲解](https://www.bilibili.com/video/BV1Hd4y1U7mb/?vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [LLVM设计架构](https://www.bilibili.com/video/BV1CG4y1V7Dn/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [LLVM IR详解](https://www.bilibili.com/video/BV1PP411u7NR/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [LLVM前端和优化层](https://www.bilibili.com/video/BV1vd4y1t7vS/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [LLVM后端和代码生成](https://www.bilibili.com/video/BV1cd4y1b7ho/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+
+
+## GiantPandaCV原创的学习笔记
 
 - [TVM 学习指南（个人版）](https://mp.weixin.qq.com/s/NM5yvxW2JSbR06RmrR3ubw)
 - [白杨：TVM源语-Compute篇](https://mp.weixin.qq.com/s/ohWy5yBrsKpzApfjQLXWJg)
@@ -68,8 +78,9 @@
 - [【从零开始学深度学习编译器】二，TVM中的scheduler](https://mp.weixin.qq.com/s/fPpqKL3uaaJ5QlNS79DZ5Q)
 - [【从零开始学深度学习编译器】一，深度学习编译器及TVM 介绍](https://mp.weixin.qq.com/s/sZLWjYebbHjCgQ6XAZCiOw)
 
-## 其它博客精选（TVM&MLIR 相关）
+## 其它博客和网站精选（TVM&MLIR 相关）
 
+- [miniSysY 编译实验课程，学习LLVM的中文入门资料](https://buaa-se-compiling.github.io/miniSysY-tutorial/)
 - [深度学习编译器 TVM 代码串讲](https://zhuanlan.zhihu.com/p/446976730)
 - [TVM Overview](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
 - [TVM - Relay IR计算图可视化](https://chhzh123.github.io/blogs/2020-03-25-relay-ir-viz/)
@@ -82,6 +93,7 @@
 - [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
 - [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
 - [向外借力：Pluto助力MLIR编译器的多面体优化](https://mp.weixin.qq.com/s/n33DyOeTjA93HavZBZb94g)
+
 
 ### TVM 自底向上专题-来自知乎Kord
 
