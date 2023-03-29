@@ -34,7 +34,7 @@
 
 > LLVM 系列视频对应的源码在：https://github.com/lac-dcc/llvm-course
 
-### 国内其它up主的编译器视频推荐（包含LLVM/MLIR/TVM）
+### 国内其它up主的编译器视频（包含LLVM/MLIR/TVM）
 
 #### LLVM相关视频
 
@@ -75,6 +75,20 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 
 #### TVM相关视频
 
+- [AI-Compiler科普——TVM的使用讲解](https://www.bilibili.com/video/BV1MK4y1u7nF/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM流程梳理](https://www.bilibili.com/video/BV123411r7o8/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM-Realy流程梳理](https://www.bilibili.com/video/BV1uP4y1W7fc/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [AI编译器后端优化介绍](https://www.bilibili.com/video/BV17D4y177bP/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [算子的计算和调度](https://www.bilibili.com/video/BV1K84y1x7Be/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [算子优化的手工方式](https://www.bilibili.com/video/BV1ZA411X7WZ/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [算子循环优化](https://www.bilibili.com/video/BV1r14y1w7hG/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [指令和存储优化](https://www.bilibili.com/video/BV11d4y1a7J6/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [Auto Tuning原理](https://www.bilibili.com/video/BV1uA411D7JF/?spm_id_from=333.788&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM简介](https://www.bilibili.com/video/BV14N4y1c7zq/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM自动调度算法AutoTVM](https://www.bilibili.com/video/BV1114y1e7FK/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [ANSOR：为深度学习生成高性能张量程序](https://www.bilibili.com/video/BV1m14y1Y7LN/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM 编译流程与中间表示分析（一）](https://www.bilibili.com/video/BV1v3411U7fM/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TVM 编译流程与中间表示分析（二）](https://www.bilibili.com/video/BV1624y1v7wx/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 
 ## GiantPandaCV原创的学习笔记
 
