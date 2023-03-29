@@ -46,6 +46,27 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 #### MLIR相关视频
 
 - [人工智能编译器MLIR-官方入门教程讲解](https://www.bilibili.com/video/BV1Hd4y1U7mb/?vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解(一)：AI编译器是啥？](https://www.bilibili.com/video/BV1yP4y1d7gz/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解(二)：TPU-MLIR简介](https://www.bilibili.com/video/BV19d4y1B7eR/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（三）：MLIR语法介绍（上）](https://www.bilibili.com/video/BV1CP411n7fj/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（四）：MLIR语法介绍（中）](https://www.bilibili.com/video/BV1Gt4y1F7mt/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（五）：MLIR语法介绍（下）](https://www.bilibili.com/video/BV1UN4y1w72r/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（六）：前端转换](https://www.bilibili.com/video/BV1yv4y1S7WT/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（七）：MLIR- Dialect Conversion](https://www.bilibili.com/video/BV1UG411c7nm/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（八）：Lowering in TPU-MLIR](https://www.bilibili.com/video/BV1gg411z7mC/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（九）：量化概述](https://www.bilibili.com/video/BV1d8411j7t4/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十）：量化推导](https://www.bilibili.com/video/BV1SW4y1H7Uu/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十一）：量化校准](https://www.bilibili.com/video/BV1qK411R75k/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十二）：量化感知训练](https://www.bilibili.com/video/BV12g411J7WQ/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十三）：精度验证](https://www.bilibili.com/video/BV14e4y1M79d/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十四）：Pattern Rewriting](https://www.bilibili.com/video/BV1R44y1d7xv/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十五）：模型适配](https://www.bilibili.com/video/BV1mM411y7Ep/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR系列讲解（十六）：图优化](https://www.bilibili.com/video/BV1AR4y1U7D6/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [ep1｜TPU-MLIR Introduction AI Compiler](https://www.bilibili.com/video/BV1V24y1h7J1/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR Ep2 TPU-MLIR Overview](https://www.bilibili.com/video/BV1cR4y1z7Rb/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR Ep3 MLIR Brief Intro](https://www.bilibili.com/video/BV1b14y1c7jN/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [ep17 | TPU-MLIR Introduction ：To ONNX Format](https://www.bilibili.com/video/BV1FD4y1H7pT/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [TPU-MLIR线上分享会（一）：论文讲解](https://www.bilibili.com/video/BV1My4y1o73Q/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 
 
 #### TVM相关视频
