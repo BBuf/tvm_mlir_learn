@@ -72,6 +72,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [TPU-MLIR Ep3 MLIR Brief Intro](https://www.bilibili.com/video/BV1b14y1c7jN/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 - [ep17 | TPU-MLIR Introduction ：To ONNX Format](https://www.bilibili.com/video/BV1FD4y1H7pT/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 - [TPU-MLIR线上分享会（一）：论文讲解](https://www.bilibili.com/video/BV1My4y1o73Q/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
+- [MegCC 用模型编译的方式实现超轻量端上高性能推理](https://www.zhihu.com/zvideo/1579066161320120320)
 
 #### TVM相关视频
 
@@ -136,6 +137,15 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM Tutorial](https://llvm.org/docs/tutorial/index.html)
 - [miniSysY 编译实验课程，学习LLVM的中文入门资料](https://buaa-se-compiling.github.io/miniSysY-tutorial/)
 - [中科院 LLVM每日谈专栏](https://zhuanlan.zhihu.com/llvm-clang)
+- [使用LLVM实现一门语言（一）Lexer](https://zhuanlan.zhihu.com/p/334730846)
+- [使用LLVM实现一门语言（二）Parser](https://zhuanlan.zhihu.com/p/334739920)
+- [使用LLVM实现一门语言（三）Code Generation to LLVM IR](https://zhuanlan.zhihu.com/p/334756681)
+- [使用LLVM实现一门语言（四）Optimizer](https://zhuanlan.zhihu.com/p/334791822)
+- [使用LLVM实现一门语言（五）Adding a JIT Compiler](https://zhuanlan.zhihu.com/p/334797700)
+- [使用LLVM实现一门语言（六）SSA](https://zhuanlan.zhihu.com/p/335303123)
+- [使用LLVM实现一门语言（七）Control Flow](https://zhuanlan.zhihu.com/p/335344134)
+- [使用LLVM实现一门语言（八）User-defined Operators](https://zhuanlan.zhihu.com/p/336243654)
+- [使用LLVM实现一门语言（九）Mutable Variables](https://zhuanlan.zhihu.com/p/336929719)
 
 ### TVM精选
 
@@ -176,6 +186,21 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [TVM学习（八）pass总结](https://zhuanlan.zhihu.com/p/358437531)
 - [TVM学习（九）codegen中的内存申请](https://zhuanlan.zhihu.com/p/363721019)
 - [TVM学习（十）从relay到TOPI](https://zhuanlan.zhihu.com/p/374516615)
+- [TVM TensorIR 浅析](https://zhuanlan.zhihu.com/p/451854416)
+- [TVM图编译器NNVM简单探究](https://zhuanlan.zhihu.com/p/90528541)
+- [TVM图编译器Relay简单探究](https://zhuanlan.zhihu.com/p/91283238)
+- [基于TensorIR生成mma指令并实现16x16x4矩阵乘](https://zhuanlan.zhihu.com/p/455166274)
+- [基于TVM的PTX Tensor Core汇编代码生成](https://zhuanlan.zhihu.com/p/456242751)
+- [一个tvm(te)实现的cutlass efficient gemm](https://zhuanlan.zhihu.com/p/560729749)
+- [TIR Script CUTLASS Efficient Gemm](https://zhuanlan.zhihu.com/p/562360659)
+- [TVM系列「一」TVM概览](https://zhuanlan.zhihu.com/p/381324332)
+- [TVM系列「二」TVM学习资源](https://zhuanlan.zhihu.com/p/381330616)
+- [TVM系列「三」TVM官方文档的结构](https://zhuanlan.zhihu.com/p/381331888)
+- [TVM系列「四」TVM的使用：compute+schedule双剑合璧](https://zhuanlan.zhihu.com/p/381333188)
+- [TVM系列「五」TVM整体架构及其代码生成](https://zhuanlan.zhihu.com/p/381691430)
+- [TVM系列「六」Relay IR与Relay Pass](https://zhuanlan.zhihu.com/p/390087648)
+- [TVM系列「七」AutoTVM（AutoTune）](https://zhuanlan.zhihu.com/p/392015642)
+- [TVM系列「八」AutoScheduler「Ansor」](https://zhuanlan.zhihu.com/p/394765523)
 
 ### MLIR精选
 
@@ -191,7 +216,32 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [IREE编译流程解析(四)](https://hjchen2.github.io/2023/01/04/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B4/)
 - [IREE编译流程解析(五)](https://hjchen2.github.io/2023/02/13/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B5/)
 - [IREE编译流程解析(六)](https://hjchen2.github.io/2023/02/24/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B6/)
+- [megcc 开箱评测](https://zhuanlan.zhihu.com/p/605385779)
 
+### 其它编译器&&论文阅读
+
+开拓眼界...
+
+- [Glenside : 如何自动发现im2col布局转换?](https://zhuanlan.zhihu.com/p/456616977)
+- [基于Halide自动生成Kernel Fusion & Tiling](https://zhuanlan.zhihu.com/p/489888931)
+- [AKG: 使用post-tiling fusion策略完成无副作用的内存优化](https://zhuanlan.zhihu.com/p/535606722)
+- [[教程翻译] Polyhedral Tutorials](https://zhuanlan.zhihu.com/p/553703704)
+- [带宽受限下的DSA后端优化](https://zhuanlan.zhihu.com/p/585176512)
+- [Equality Saturation优化在AI编译器中遇到的挑战](https://zhuanlan.zhihu.com/p/605459519)
+- [DSA后端Compute Schedule与Buffer Schedule](https://zhuanlan.zhihu.com/p/609483844)
+- [ASPLOS，我的初体验](https://zhuanlan.zhihu.com/p/113340891)
+- [读You and Your Research笔记](https://zhuanlan.zhihu.com/p/114014432)
+- [[阅读笔记] AStitch @ASPLOS 2022](https://zhuanlan.zhihu.com/p/477984880)
+- [[阅读笔记] RAKE @ASPLOS 2022](https://zhuanlan.zhihu.com/p/511381790)
+- [[阅读笔记] NASA @ISCA 2021](https://zhuanlan.zhihu.com/p/513464183)
+- [[阅读笔记] BOLT @MLSys 2022](https://zhuanlan.zhihu.com/p/514032549)
+- [[阅读笔记] Alpa/Parax @OSDI 2022](https://zhuanlan.zhihu.com/p/521211578)
+- [[阅读笔记] SIMD^2 ISCA 2022](https://zhuanlan.zhihu.com/p/528108829)
+- [AMOS ISCA 2022](https://zhuanlan.zhihu.com/p/530626092)
+- [[阅读笔记] PCCS MICRO 2021](https://zhuanlan.zhihu.com/p/586308472)
+- [[阅读笔记] Planaria@MICRO 2020](https://zhuanlan.zhihu.com/p/589773030)
+- [Chimera HPCA 2023](https://zhuanlan.zhihu.com/p/612913262)
+- [在MacBook Pro 2019上优化GEMM](https://zhuanlan.zhihu.com/p/468304964)
 
 ## 系统性的专栏或者网站
 
