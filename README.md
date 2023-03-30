@@ -75,6 +75,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 
 #### TVM相关视频
 
+- [陈天奇 机器学习课程](https://mlc.ai/zh/chapter_introduction/index.html)
 - [AI-Compiler科普——TVM的使用讲解](https://www.bilibili.com/video/BV1MK4y1u7nF/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 - [TVM流程梳理](https://www.bilibili.com/video/BV123411r7o8/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 - [TVM-Realy流程梳理](https://www.bilibili.com/video/BV1uP4y1W7fc/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
@@ -147,15 +148,41 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [tvm算子优化schedule（二）--GPU篇](https://zhuanlan.zhihu.com/p/403370698)
 - [TVM Runtime System 概述](https://zhuanlan.zhihu.com/p/504066888)
 - [TVM PackedFunc实现机制](https://hjchen2.github.io/2020/01/10/TVM-PackedFunc%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6/)
+- [深入理解TVM：Python/C++互调（上）](https://zhuanlan.zhihu.com/p/363991566)
+- [Round-tripping objects through the FFI](https://discuss.tvm.apache.org/t/round-tripping-objects-through-the-ffi/8440)
 - [TVM 自底向上（一）：基本框架和概念](https://zhuanlan.zhihu.com/p/532873577)
 - [TVM 自底向上（二）：TIR 的概念和编译原理](https://zhuanlan.zhihu.com/p/533161438)
 - [TVM 自底向上（三）：TE 的概念和编译原理](https://zhuanlan.zhihu.com/p/534313816)
 - [TVM 自底向上（四）：TE/TIR Schedule 的原理](https://zhuanlan.zhihu.com/p/534062007)
+- [深入理解TVM专栏，主要是对部分codebase的解读](https://www.zhihu.com/column/c_1394234963567394816)
+- [tvm schedule详细举例](https://zhuanlan.zhihu.com/p/94846767)
+- [TVM - 代码生成流程](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
+- [Relax: TVM 的下一代图层级 IR](https://zhuanlan.zhihu.com/p/523395133)
+- [TVM之Tensor数据结构解读](https://zhuanlan.zhihu.com/p/341257418)
+- [TVM之设计模式解读（一）--visitor模式](https://zhuanlan.zhihu.com/p/341334406)
+- [TVM之设计模式解读（二）--责任链模式](https://zhuanlan.zhihu.com/p/342108378)
+- [TVM之TIR相关数据结构](https://zhuanlan.zhihu.com/p/343654464)
+- [TVM之设计模式解读（三）-单例模式,模板方法模式](https://zhuanlan.zhihu.com/p/342238892)
+- [TVM之tir 转换成llvm ir](https://zhuanlan.zhihu.com/p/344553283)
+- [TVM之graph_runtime](https://zhuanlan.zhihu.com/p/345085746)
+- [TVM之relay.build流程解读](https://zhuanlan.zhihu.com/p/348696198)
+- [TVM学习（一）](https://zhuanlan.zhihu.com/p/333706468)
+- [TVM学习（二）：算符融合](https://zhuanlan.zhihu.com/p/337824083)
+- [TVM学习（三）编译流程](https://zhuanlan.zhihu.com/p/338550499)
+- [TVM学习（四）codegen](https://zhuanlan.zhihu.com/p/339566528)
+- [TVM学习（五）schedule](https://zhuanlan.zhihu.com/p/341498731)
+- [TVM学习（六）细读前端](https://zhuanlan.zhihu.com/p/346514871)
+- [TVM学习（七）算子](https://zhuanlan.zhihu.com/p/351403985)
+- [TVM学习（八）pass总结](https://zhuanlan.zhihu.com/p/358437531)
+- [TVM学习（九）codegen中的内存申请](https://zhuanlan.zhihu.com/p/363721019)
+- [TVM学习（十）从relay到TOPI](https://zhuanlan.zhihu.com/p/374516615)
 
 ### MLIR精选
 
 - [机器学习编译器代码生成相关 MLIR Dialect](https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/)
 - [编译器与中间表示: LLVM IR, SPIR-V, 以及 MLIR](https://www.lei.chat/zh/posts/compilers-and-irs-llvm-ir-spirv-and-mlir/)
+- [MLIR Vector Dialect 以及 Patterns](https://www.lei.chat/zh/posts/mlir-vector-dialect-and-patterns/)
+- [MLIR Linalg Dialect 以及 Patterns](https://www.lei.chat/zh/posts/mlir-linalg-dialect-and-patterns/)
 - [向外借力：Pluto助力MLIR编译器的多面体优化](https://mp.weixin.qq.com/s/n33DyOeTjA93HavZBZb94g)
 - [IREE编译流程解析](https://hjchen2.github.io/2023/01/04/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B/)
 - [IREE编译流程解析(一)](https://hjchen2.github.io/2023/01/04/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B1/)
@@ -173,9 +200,10 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [蓝色的味道](https://zhuanlan.zhihu.com/frozengene)
 - [TVM官方专栏](https://zhuanlan.zhihu.com/tvmai)
 - [Apache TVM 中文站](https://tvm.hyper.ai/)
+- [深度学习编译器学习笔记和实践体会](https://www.zhihu.com/column/c_1169609848697663488)
 
 ## 工具介绍
 
 - [FFI Navigator: 跨语言调用跳转IDE插件](https://zhuanlan.zhihu.com/p/103426525)
-
+- [如何Debug TVM的源码](https://zhuanlan.zhihu.com/p/481972756)
 
