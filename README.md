@@ -159,6 +159,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 ### TVM精选
 
 - [深度学习编译器 TVM 代码串讲](https://zhuanlan.zhihu.com/p/446976730)
+- [TVM编译流程与中间表示分析](https://zhuanlan.zhihu.com/p/596526031)
 - [TVM Overview](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
 - [TVM - Relay IR计算图可视化](https://chhzh123.github.io/blogs/2020-03-25-relay-ir-viz/)
 - [TVM - 代码生成流程](https://chhzh123.github.io/blogs/2020-03-26-tvm-flow/)
