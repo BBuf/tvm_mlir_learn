@@ -82,6 +82,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [AI框架源码走读：tpu-mlir（三）](https://zhuanlan.zhihu.com/p/618707936)
 - [TPU-MLIR线上分享会（一）：论文讲解](https://www.bilibili.com/video/BV1My4y1o73Q/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 - [MegCC 用模型编译的方式实现超轻量端上高性能推理](https://www.zhihu.com/zvideo/1579066161320120320)
+- [动态shape深度学习编译器论文分享：DISC](https://www.bilibili.com/video/BV16R4y1U7J5/?spm_id_from=333.999.0.0&vd_source=4dffb0fbabed4311f4318e8c6d253a10)
 
 #### TVM相关视频
 
@@ -227,6 +228,9 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [IREE编译流程解析(五)](https://hjchen2.github.io/2023/02/13/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B5/)
 - [IREE编译流程解析(六)](https://hjchen2.github.io/2023/02/24/IREE%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B6/)
 - [megcc 开箱评测](https://zhuanlan.zhihu.com/p/605385779)
+- [阿里 BladeDISC 深度学习编译器正式开源](https://zhuanlan.zhihu.com/p/462641670)
+- [全面支持 PyTorch 2.0：BladeDISC 5月~11月新功能发布](https://zhuanlan.zhihu.com/p/590314270)
+- [【GTC 22】通过 PAI-Blade 更方便、更鲁棒地使用 TensorRT](https://zhuanlan.zhihu.com/p/490295901)
 
 ### 其它编译器&&论文阅读
 
@@ -252,6 +256,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [[阅读笔记] Planaria@MICRO 2020](https://zhuanlan.zhihu.com/p/589773030)
 - [Chimera HPCA 2023](https://zhuanlan.zhihu.com/p/612913262)
 - [在MacBook Pro 2019上优化GEMM](https://zhuanlan.zhihu.com/p/468304964)
+- [OSDI '20 | RAMMER (NNFusion) 如何进一步压榨加速器性能](https://zhuanlan.zhihu.com/p/275837455)
+- [算子调度优化论文分享：Rammer](https://zhuanlan.zhihu.com/p/616050345)
 
 ## 系统性的专栏或者网站
 
