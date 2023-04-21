@@ -1,6 +1,6 @@
 # tvm_mlir_learn
 
-> 我也维护了一个cuda学习仓库，有需要的小伙伴可以点一点star：https://github.com/BBuf/how-to-optim-algorithm-in-cuda
+> 我也维护了一个cuda学习仓库 https://github.com/BBuf/how-to-optim-algorithm-in-cuda 以及一个如何学习深度学习框架（PyTorch和OneFlow）的学习仓库，https://github.com/BBuf/how-to-learn-deep-learning-framework , 有需要的小伙伴可以**点一点star**
 
 ## 项目结构介绍
 
