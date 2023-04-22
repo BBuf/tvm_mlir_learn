@@ -139,6 +139,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [【从零开始学TVM】三，基于ONNX模型结构了解TVM的前端](https://mp.weixin.qq.com/s/KFxd3zf76EP3DFcCAPZjvQ)
 - [【从零开始学深度学习编译器】二，TVM中的scheduler](https://mp.weixin.qq.com/s/fPpqKL3uaaJ5QlNS79DZ5Q)
 - [【从零开始学深度学习编译器】一，深度学习编译器及TVM 介绍](https://mp.weixin.qq.com/s/sZLWjYebbHjCgQ6XAZCiOw)
+- [ChatGPT和Claude 对比测试（以Review MLIR Codegen代码为例）更新官方ChatGPT的结果](https://mp.weixin.qq.com/s/DY7ivzxZzBa6eOr4e5mJPQ)
+- [GPT4 VS Claude In MLIR](https://mp.weixin.qq.com/s/JiOOMUouOF5buSR23juABg)
 
 ## 其它博客和网站精选（TVM&MLIR&LLVM 相关）
 
