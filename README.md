@@ -215,6 +215,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [TVM系列「七」AutoTVM（AutoTune）](https://zhuanlan.zhihu.com/p/392015642)
 - [TVM系列「八」AutoScheduler「Ansor」](https://zhuanlan.zhihu.com/p/394765523)
 - [SparseTIR: TVM的稀疏算子编译抽象](https://zhuanlan.zhihu.com/p/623430104)
+- [Web-LLM:机器学习编译纯浏览器运行大模型](https://zhuanlan.zhihu.com/p/622271247)
+- [MLC-LLM: 在任何设备上编译运行大语言模型](https://zhuanlan.zhihu.com/p/625959003)
 
 ### MLIR精选
 
@@ -262,6 +264,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [OSDI '20 | RAMMER (NNFusion) 如何进一步压榨加速器性能](https://zhuanlan.zhihu.com/p/275837455)
 - [算子调度优化论文分享：Rammer](https://zhuanlan.zhihu.com/p/616050345)
 - [TorchDynamo 初探：Python ByteCode 的动态修改](https://zhuanlan.zhihu.com/p/589115427)
+- [PyTorch 2.0 Dynamo 字节码详解！自顶向下，由浅入深](https://zhuanlan.zhihu.com/p/625136260)
 
 ## 系统性的专栏或者网站
 
