@@ -217,6 +217,9 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [SparseTIR: TVM的稀疏算子编译抽象](https://zhuanlan.zhihu.com/p/623430104)
 - [Web-LLM:机器学习编译纯浏览器运行大模型](https://zhuanlan.zhihu.com/p/622271247)
 - [MLC-LLM: 在任何设备上编译运行大语言模型](https://zhuanlan.zhihu.com/p/625959003)
+- [TVM和BLIS对GEMM计算/优化方式的对比](https://zhuanlan.zhihu.com/p/494347227)
+- [TVM Tir 到 VTA Simulator 指令仿真的过程](https://zhuanlan.zhihu.com/p/503277784)
+- [【我与TVM二三事 中篇（5）】tvm tensorrt](https://zhuanlan.zhihu.com/p/457959069)
 
 ### MLIR精选
 
@@ -279,4 +282,4 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 
 - [FFI Navigator: 跨语言调用跳转IDE插件](https://zhuanlan.zhihu.com/p/103426525)
 - [如何Debug TVM的源码](https://zhuanlan.zhihu.com/p/481972756)
-
+- [GDB调试入门指南](https://zhuanlan.zhihu.com/p/74897601)
