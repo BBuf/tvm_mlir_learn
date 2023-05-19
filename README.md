@@ -143,6 +143,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [GPT4 VS Claude In MLIR](https://mp.weixin.qq.com/s/JiOOMUouOF5buSR23juABg)
 - [OpenAI/Triton MLIR 第零章: 源码编译](https://zhuanlan.zhihu.com/p/628022771)
 - [OpenAI/Triton MLIR 第一章: Triton DSL](https://zhuanlan.zhihu.com/p/628394465)
+- [深度学习编译器之Layerout Transform优化](https://zhuanlan.zhihu.com/p/630355701)
 
 ## 其它博客和网站精选（TVM&MLIR&LLVM 相关）
 
