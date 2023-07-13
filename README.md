@@ -270,8 +270,10 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [在MacBook Pro 2019上优化GEMM](https://zhuanlan.zhihu.com/p/468304964)
 - [OSDI '20 | RAMMER (NNFusion) 如何进一步压榨加速器性能](https://zhuanlan.zhihu.com/p/275837455)
 - [算子调度优化论文分享：Rammer](https://zhuanlan.zhihu.com/p/616050345)
+- [【AI编译器】 论文阅读（二）Rammer](https://zhuanlan.zhihu.com/p/643301015)
 - [TorchDynamo 初探：Python ByteCode 的动态修改](https://zhuanlan.zhihu.com/p/589115427)
 - [PyTorch 2.0 Dynamo 字节码详解！自顶向下，由浅入深](https://zhuanlan.zhihu.com/p/625136260)
+- [Paper阅读笔记: Welder: Scheduling Deep Learning Memory Access via Tile-graph](https://zhuanlan.zhihu.com/p/643155184)
 
 ## 系统性的专栏或者网站
 
