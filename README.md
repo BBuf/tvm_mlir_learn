@@ -161,6 +161,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [使用LLVM实现一门语言（七）Control Flow](https://zhuanlan.zhihu.com/p/335344134)
 - [使用LLVM实现一门语言（八）User-defined Operators](https://zhuanlan.zhihu.com/p/336243654)
 - [使用LLVM实现一门语言（九）Mutable Variables](https://zhuanlan.zhihu.com/p/336929719)
+- [LLVM编译器之Pass添加](https://zhuanlan.zhihu.com/p/650938510)
 
 ### TVM精选
 
