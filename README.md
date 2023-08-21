@@ -276,6 +276,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [PyTorch 2.0 Dynamo 字节码详解！自顶向下，由浅入深](https://zhuanlan.zhihu.com/p/625136260)
 - [Paper阅读笔记: Welder: Scheduling Deep Learning Memory Access via Tile-graph](https://zhuanlan.zhihu.com/p/643155184)
 - [[Hands-On Polyhedral] C CodeGen](https://zhuanlan.zhihu.com/p/644188920)
+- [【论文阅读】DISTAL: 分布式张量代数编译器 (DISTAL: The Distributed Tensor Algebra Compiler)](https://zhuanlan.zhihu.com/p/650326653)
 
 ## 系统性的专栏或者网站
 
