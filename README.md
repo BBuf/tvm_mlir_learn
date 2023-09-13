@@ -163,6 +163,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [使用LLVM实现一门语言（九）Mutable Variables](https://zhuanlan.zhihu.com/p/336929719)
 - [LLVM编译器之Pass添加](https://zhuanlan.zhihu.com/p/650938510)
 - [CUDA 编译与 NVVM IR 笔记](https://zhuanlan.zhihu.com/p/409154399)
+- [LLVM 中的循环: Loop](https://zhuanlan.zhihu.com/p/536765546)
 
 ### TVM精选
 
