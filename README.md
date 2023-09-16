@@ -246,6 +246,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [阿里 BladeDISC 深度学习编译器正式开源](https://zhuanlan.zhihu.com/p/462641670)
 - [全面支持 PyTorch 2.0：BladeDISC 5月~11月新功能发布](https://zhuanlan.zhihu.com/p/590314270)
 - [【GTC 22】通过 PAI-Blade 更方便、更鲁棒地使用 TensorRT](https://zhuanlan.zhihu.com/p/490295901)
+- [LLVM后端：TableGen简易入门](https://zhuanlan.zhihu.com/p/625227861)
 
 ### 其它编译器&&论文阅读
 
