@@ -164,6 +164,11 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM编译器之Pass添加](https://zhuanlan.zhihu.com/p/650938510)
 - [CUDA 编译与 NVVM IR 笔记](https://zhuanlan.zhihu.com/p/409154399)
 - [LLVM 中的循环: Loop](https://zhuanlan.zhihu.com/p/536765546)
+- [GPU AtomicOptimizer In LLVM](https://zhuanlan.zhihu.com/p/645755163)
+- [（二）LLVM概述——基础架构](https://zhuanlan.zhihu.com/p/102250532)
+- [（三）LLVM概述——第一个LLVM项目](https://zhuanlan.zhihu.com/p/102270840)
+- [深入浅出 LLVM之 Value 、User 、Use 源码解析](https://zhuanlan.zhihu.com/p/666016704)
+- [LLVM源码阅读之 BasicBlock 遍历](https://zhuanlan.zhihu.com/p/664407911)
 
 ### TVM精选
 
@@ -280,6 +285,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [Paper阅读笔记: Welder: Scheduling Deep Learning Memory Access via Tile-graph](https://zhuanlan.zhihu.com/p/643155184)
 - [[Hands-On Polyhedral] C CodeGen](https://zhuanlan.zhihu.com/p/644188920)
 - [【论文阅读】DISTAL: 分布式张量代数编译器 (DISTAL: The Distributed Tensor Algebra Compiler)](https://zhuanlan.zhihu.com/p/650326653)
+- [CGO'17 Optimistic Loop Optimization 乐观循环优化](https://zhuanlan.zhihu.com/p/657901395)
+- [经典论文鉴赏之《How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs》](https://zhuanlan.zhihu.com/p/657936555)
 
 ## 系统性的专栏或者网站
 
