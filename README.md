@@ -169,6 +169,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [（三）LLVM概述——第一个LLVM项目](https://zhuanlan.zhihu.com/p/102270840)
 - [深入浅出 LLVM之 Value 、User 、Use 源码解析](https://zhuanlan.zhihu.com/p/666016704)
 - [LLVM源码阅读之 BasicBlock 遍历](https://zhuanlan.zhihu.com/p/664407911)
+- [Introduce MemorySSA in LLVM](https://zhuanlan.zhihu.com/p/669901322)
+- [深入浅出 LLVM之 DenseMap 源码解析](https://zhuanlan.zhihu.com/p/669307116)
 
 ### TVM精选
 
@@ -252,6 +254,8 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [全面支持 PyTorch 2.0：BladeDISC 5月~11月新功能发布](https://zhuanlan.zhihu.com/p/590314270)
 - [【GTC 22】通过 PAI-Blade 更方便、更鲁棒地使用 TensorRT](https://zhuanlan.zhihu.com/p/490295901)
 - [LLVM后端：TableGen简易入门](https://zhuanlan.zhihu.com/p/625227861)
+- [MLIR Compiler Components](https://zhuanlan.zhihu.com/p/670143103)
+- [第一篇 MLIR - Getting Started](https://zhuanlan.zhihu.com/p/668718998)
 
 ### 其它编译器&&论文阅读
 
@@ -287,6 +291,11 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [【论文阅读】DISTAL: 分布式张量代数编译器 (DISTAL: The Distributed Tensor Algebra Compiler)](https://zhuanlan.zhihu.com/p/650326653)
 - [CGO'17 Optimistic Loop Optimization 乐观循环优化](https://zhuanlan.zhihu.com/p/657901395)
 - [经典论文鉴赏之《How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs》](https://zhuanlan.zhihu.com/p/657936555)
+- [DSA后端Compute Schedule与Buffer Schedule](https://zhuanlan.zhihu.com/p/609483844)
+- [带宽受限下的DSA后端优化](https://zhuanlan.zhihu.com/p/585176512)
+- [编译优化 - 循环优化](https://zhuanlan.zhihu.com/p/458079943)
+- [详解三大编译器：gcc、llvm 和 clang](https://zhuanlan.zhihu.com/p/357803433)
+- [动态 shape 的挑战与解决现状](https://zhuanlan.zhihu.com/p/661889518)
 
 ## 系统性的专栏或者网站
 
