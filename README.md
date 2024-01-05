@@ -171,6 +171,9 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM源码阅读之 BasicBlock 遍历](https://zhuanlan.zhihu.com/p/664407911)
 - [Introduce MemorySSA in LLVM](https://zhuanlan.zhihu.com/p/669901322)
 - [深入浅出 LLVM之 DenseMap 源码解析](https://zhuanlan.zhihu.com/p/669307116)
+- [基于LLVM的函数运行时计时器简单PASS实现](https://zhuanlan.zhihu.com/p/674892029)
+- [LLVM中指令选择的流程是啥样的？](https://zhuanlan.zhihu.com/p/675543769)
+- [写给入门者的LLVM介绍](https://zhuanlan.zhihu.com/p/472813616)
 
 ### TVM精选
 
@@ -296,6 +299,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [编译优化 - 循环优化](https://zhuanlan.zhihu.com/p/458079943)
 - [详解三大编译器：gcc、llvm 和 clang](https://zhuanlan.zhihu.com/p/357803433)
 - [动态 shape 的挑战与解决现状](https://zhuanlan.zhihu.com/p/661889518)
+- [[Hands-On Polyhedral] Schedule Program](https://zhuanlan.zhihu.com/p/675724329)
 
 ## 系统性的专栏或者网站
 
