@@ -300,6 +300,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [详解三大编译器：gcc、llvm 和 clang](https://zhuanlan.zhihu.com/p/357803433)
 - [动态 shape 的挑战与解决现状](https://zhuanlan.zhihu.com/p/661889518)
 - [[Hands-On Polyhedral] Schedule Program](https://zhuanlan.zhihu.com/p/675724329)
+- [Tensor Expression DSL总结](https://zhuanlan.zhihu.com/p/674882975)
 
 ## 系统性的专栏或者网站
 
