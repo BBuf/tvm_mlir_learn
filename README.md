@@ -238,6 +238,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [TVM Tir 到 VTA Simulator 指令仿真的过程](https://zhuanlan.zhihu.com/p/503277784)
 - [【我与TVM二三事 中篇（5）】tvm tensorrt](https://zhuanlan.zhihu.com/p/457959069)
 - [TVM Relax如何支持dynamic shape](https://zhuanlan.zhihu.com/p/627449108)
+- [【我与TVM二三事 后篇（2）】MSC之架构 && MSCGraph](https://zhuanlan.zhihu.com/p/680724856)
 
 ### MLIR精选
 
@@ -260,6 +261,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM后端：TableGen简易入门](https://zhuanlan.zhihu.com/p/625227861)
 - [MLIR Compiler Components](https://zhuanlan.zhihu.com/p/670143103)
 - [第一篇 MLIR - Getting Started](https://zhuanlan.zhihu.com/p/668718998)
+- [MLIR学习笔记(二)——Dialect定义(二)](https://zhuanlan.zhihu.com/p/678697994)
 
 ### 其它编译器&&论文阅读
 
