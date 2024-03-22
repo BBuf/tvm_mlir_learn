@@ -323,10 +323,6 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 ## Star History
 
 
-<a href="https://star-history.com/#BBuf/tvm_mlir_learnk&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date" />
-  </picture>
-</a>
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learn&type=Date)](https://star-history.com/#BBuf/tvm_mlir_learn&Date)
