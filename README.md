@@ -319,3 +319,14 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [FFI Navigator: 跨语言调用跳转IDE插件](https://zhuanlan.zhihu.com/p/103426525)
 - [如何Debug TVM的源码](https://zhuanlan.zhihu.com/p/481972756)
 - [GDB调试入门指南](https://zhuanlan.zhihu.com/p/74897601)
+
+## Star History
+
+
+<a href="https://star-history.com/#BBuf/tvm_mlir_learnk&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=BBuf/tvm_mlir_learnk&type=Date" />
+  </picture>
+</a>
