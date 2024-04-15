@@ -175,6 +175,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM中指令选择的流程是啥样的？](https://zhuanlan.zhihu.com/p/675543769)
 - [写给入门者的LLVM介绍](https://zhuanlan.zhihu.com/p/472813616)
 - [LLVM Techniques 读书笔记](https://zhuanlan.zhihu.com/p/600788656)
+- [【LLVM编译器系列-15】后端代码生成器-指令调度1](https://zhuanlan.zhihu.com/p/692002412)
 
 ### TVM精选
 
