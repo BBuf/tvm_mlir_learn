@@ -177,6 +177,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [LLVM Techniques 读书笔记](https://zhuanlan.zhihu.com/p/600788656)
 - [【LLVM编译器系列-15】后端代码生成器-指令调度1](https://zhuanlan.zhihu.com/p/692002412)
 - [[LLVM] LLVM中添加RISC-V Vector intrinsic - 2](https://zhuanlan.zhihu.com/p/551333227)
+- [LLVM学习之replaceUsesOfNonProtoConstant函数分析](https://zhuanlan.zhihu.com/p/699145476)
 
 ### TVM精选
 
@@ -241,6 +242,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [【我与TVM二三事 中篇（5）】tvm tensorrt](https://zhuanlan.zhihu.com/p/457959069)
 - [TVM Relax如何支持dynamic shape](https://zhuanlan.zhihu.com/p/627449108)
 - [【我与TVM二三事 后篇（2）】MSC之架构 && MSCGraph](https://zhuanlan.zhihu.com/p/680724856)
+- [通过Include依赖扩展TVM](https://zhuanlan.zhihu.com/p/942317791)
 
 ### MLIR精选
 
@@ -264,6 +266,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 - [MLIR Compiler Components](https://zhuanlan.zhihu.com/p/670143103)
 - [第一篇 MLIR - Getting Started](https://zhuanlan.zhihu.com/p/668718998)
 - [MLIR学习笔记(二)——Dialect定义(二)](https://zhuanlan.zhihu.com/p/678697994)
+- [MLIR 中的 LLVM IR 到机器指令序列化](https://zhuanlan.zhihu.com/p/673534166)
 
 ### 其它编译器&&论文阅读
 
@@ -310,6 +313,7 @@ LLVM相关的视频比较少，youtube上比较多，上面 GiantPandaCV 翻译�
 ## 系统性的专栏或者网站
 
 - [陈天奇 MLC课程](https://mlc.ai/zh/index.html)
+- [大模型 AI Compiler 学习材料](https://dwpl6xgouw.feishu.cn/wiki/DIxDwbd4Ki8fcskaT9Nc0wQznub)
 - [深度学习编译器学习笔记和实践体会](https://zhuanlan.zhihu.com/c_1169609848697663488)
 - [蓝色的味道](https://zhuanlan.zhihu.com/frozengene)
 - [TVM官方专栏](https://zhuanlan.zhihu.com/tvmai)
