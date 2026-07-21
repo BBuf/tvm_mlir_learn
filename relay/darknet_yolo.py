@@ -22,7 +22,7 @@ Compile YOLO-V2 and YOLO-V3 in DarkNet Models
 This article is an introductory tutorial to deploy darknet models with TVM.
 All the required models and libraries will be downloaded from the internet by the script.
 This script runs the YOLO-V2 and YOLO-V3 Model with the bounding boxes
-Darknet parsing have dependancy with CFFI and CV2 library
+Darknet parsing have dependency with CFFI and CV2 library
 Please install CFFI and CV2 before executing this script
 
 .. code-block:: bash
